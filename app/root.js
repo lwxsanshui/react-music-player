@@ -19,7 +19,8 @@ class App extends React.Component{
         super(props);
         this.state = {
             musicList:MUSIC_LIST,
-            currentMusicItem:MUSIC_LIST[3]
+            currentMusicItem:MUSIC_LIST[3],
+            repeatType: 'cycle'
         }
         this.playMusic = this.playMusic.bind(this);
     }
@@ -87,6 +88,7 @@ class App extends React.Component{
     render(){
         return (
             <div>
+            <Header></Header>
             {React.cloneElement(this.props.children,this.state)}
             </div>
 
