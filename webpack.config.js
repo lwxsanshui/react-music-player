@@ -26,6 +26,7 @@ module.exports = {
             'process.env.NODE_ENV':JSON.stringify('development')
         })
     ],
+    mode: 'development',
     module:{
         rules:[
             {
